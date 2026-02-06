@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cafe Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Background doodles -->
+  <div class="doodle-layer"></div>
+
+  <h1>☕ Cafe Finder</h1>
+
+  <div class="top-actions">
+    <button onclick="getLocation()">Find Cafes</button>
+    <button onclick="showSaved()">Saved Cafes</button>
+  </div>
+
+  <div class="cards"></div>
+
+  <div class="action-buttons">
+    <button onclick="saveCurrentCafe()">❤️ Save</button>
+    <button onclick="nextCafe()">➡️ Next</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Cafe Detail Modal -->
+<div id="cafeModal" class="modal hidden">
+  <div class="modal-content">
+    <button class="close-btn" id="closeModalBtn">✕</button>
+    <h2 id="modalName"></h2>
+    <p id="modalAddress"></p>
+    <p id="modalRating"></p>
+  </div>
+</div>
+
+</body>
+
+</html>
